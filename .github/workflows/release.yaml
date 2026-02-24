@@ -51,4 +51,4 @@ jobs:
 
       - name: Publish to registry ${{ env.REGISTRY }}
         run: |
-          make docker-push IMAGE_REGISTRY=${{ env.REGISTRY }} TAG=${{ steps.meta.outputs.tags }}
+          make docker-push IMAGE_REGISTRY=${{ env.REGISTRY }}/kube-slice TAG=${{ steps.meta.outputs.tags }}
